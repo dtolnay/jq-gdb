@@ -3,13 +3,12 @@ A gdb pretty-printer for jv objects in [jq](https://github.com/stedolan/jq) and 
 
 [![Build Status](https://travis-ci.org/dtolnay/jq-gdb.svg?branch=master)](https://travis-ci.org/dtolnay/jq-gdb)
 
-Setup:
+### Setup
 - Create `~/.gdbinit` if it does not already exist
 - Copy the contents of `gdbinit.template` to the end of `~/.gdbinit`
 - Replace `'/path/to/jq-gdb'` with the location to which you cloned this repo
 
-Usage:
-
+### Usage
 <pre>
 david@genie:/github/jq$ <b>gdb -q --args ./jq -n '{"k":"v"}'</b>
 Reading symbols from ./jq...done.
