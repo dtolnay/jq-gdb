@@ -1,0 +1,8 @@
+sudo: false
+
+install:
+    - git clone https://github.com/stedolan/jq.git
+    - (cd jq && autoreconf -i && ./configure && make -j8 CFLAGS=-O0)
+
+script:
+    - python jv_printer_test.py

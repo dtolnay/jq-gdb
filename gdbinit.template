@@ -1,0 +1,5 @@
+python
+sys.path.insert(1, '/path/to/jq-gdb')
+import jv_printer
+jv_printer.register_jv_printer()
+end
