@@ -1,8 +1,19 @@
 sudo: false
 
+addons:
+    apt:
+        packages:
+            - gdb
+
 install:
     - git clone https://github.com/stedolan/jq.git
-    - (cd jq && autoreconf -i && ./configure && make -j8 CFLAGS=-O0)
+    - (cd jq
+        && autoreconf -i
+        && ./configure --disable-maintainer-mode
+        && make -j8 CFLAGS="-O0 -g" LDFLAGS=-rdynamic)
 
 script:
     - python jv_printer_test.py
+
+notifications:
+    email: false

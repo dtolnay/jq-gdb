@@ -42,7 +42,6 @@ class jv_parser_test(unittest.TestCase):
         outs, errs = proc.communicate("""
                 break jq_compile_args
                 run
-                step
                 print %s
                 quit
                 """ % expr)

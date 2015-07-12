@@ -1,5 +1,11 @@
 import gdb
 
+_have_gdb_printing = True
+try:
+    import gdb.printing
+except ImportError:
+    _have_gdb_printing = False
+
 def jv_to_eval_string(jv):
     """Make a string that can be passed to gdb.parse_and_eval to
     produce the original jv.
@@ -37,4 +43,7 @@ def jv_lookup(val):
     return None
 
 def register_jv_printer():
-    gdb.printing.register_pretty_printer(None, jv_lookup)
+    if _have_gdb_printing:
+        gdb.printing.register_pretty_printer(None, jv_lookup)
+    else:
+        gdb.pretty_printers.append(jv_lookup)
