@@ -4,9 +4,10 @@ A gdb pretty-printer for jv objects in [jq](https://github.com/stedolan/jq) and 
 [![Build Status](https://travis-ci.org/dtolnay/jq-gdb.svg?branch=master)](https://travis-ci.org/dtolnay/jq-gdb)
 
 ### Setup
+- Clone this repo somewhere permanent
 - Create `~/.gdbinit` if it does not already exist
 - Copy the contents of `gdbinit.template` to the end of `~/.gdbinit`
-- Replace `'/path/to/jq-gdb'` with the location to which you cloned this repo
+- Replace `'/path/to/jq-gdb'` with the path to the clone
 
 ### Usage
 <pre>
