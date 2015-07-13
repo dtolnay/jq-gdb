@@ -1,5 +1,6 @@
 # jq-gdb
-A gdb pretty-printer for jv objects in [jq](https://github.com/stedolan/jq) and other programs using libjq.
+A gdb pretty-printer for jv objects in [jq](https://github.com/stedolan/jq)
+and other programs using [libjq](https://github.com/stedolan/jq/wiki/C-API:-libjq).
 
 [![Build Status](https://travis-ci.org/dtolnay/jq-gdb.svg?branch=master)](https://travis-ci.org/dtolnay/jq-gdb)
 
