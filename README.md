@@ -4,6 +4,8 @@ and other programs using [libjq](https://github.com/stedolan/jq/wiki/C-API:-libj
 
 [![Build Status](https://travis-ci.org/dtolnay/jq-gdb.svg?branch=master)](https://travis-ci.org/dtolnay/jq-gdb)
 
+Works with Python 2.6, 2.7, 3.2, 3.3, and 3.4.
+
 ### Setup
 - Clone this repo somewhere permanent
 - Create `~/.gdbinit` if it does not already exist
